@@ -1,0 +1,14 @@
+
+<div fxLayout="row wrap">
+  <div class="card" *ngFor="let item of products">
+    <img src="" alt="Denim Jeans" style="width:100%">
+    <h1>{{item.title}}</h1>
+    <p class="price">{{item.price}}</p>
+    <p>Some text about the jeans..</p>
+
+    <p><button (click)="addToCart(item)">Add to Cart</button></p>
+  </div>
+</div>
+
+
+

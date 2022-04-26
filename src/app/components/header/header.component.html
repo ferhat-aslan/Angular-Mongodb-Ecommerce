@@ -1,0 +1,43 @@
+<div class="topbar">
+  <div class="topbar-column">
+
+    <a class="social-button" href="#" target="_blank">
+      <img src="../../../assets/icons/facebook.png" height="25px" />
+    </a>
+    <a class="social-button" href="#" target="_blank">
+      <img src="../../../assets/icons/twitter.png" height="25px" />
+    </a>
+    <a class="social-button" href="#" target="_blank">
+      <img src="../../../assets/icons/instagram.png" height="25px" />
+    </a>
+    <a class="social-button" href="#" target="_blank">
+      <img src="../../../assets/icons/pinterest.png" height="25px" />
+    </a>
+  </div>
+  <div>
+    <div>Contact</div>
+    <div>About Us</div>
+  </div>
+</div>
+<mat-toolbar color="indigo" class="toolbar" *ngIf="!searchstat">
+  <button class="menu" mat-button (click)="toggleSidenav.emit()"><img src="../../../assets/icons/menu.png"
+      style="color: black;" height="25px" /></button>
+  <div class="pages">
+    <a [routerLink]="['/']" routerLinkActive="active" >Home Page</a>
+    <a [routerLink]="['products']" routerLinkActive="active">Products</a>
+    <a [routerLink]="['cart']" routerLinkActive="active">Carts</a>
+  </div>
+  <div class="right-items">
+    <a class="right-button" (click)="this.searchstat=true">
+      <img src="../../../assets/icons/search-interface-symbol.png" height="25px" />
+    </a><a class="right-button" >
+      <img src="../../../assets/icons/user.png" height="25px" />
+    </a>
+    <a class="cart-button" href="#" target="_blank">
+      <img src="../../../assets/icons/shopping-bag.png" height="25px" />{{cartService.cartList.length}} | {{cartService.totalprice | currency}}
+    </a></div>
+</mat-toolbar>
+<mat-toolbar color="indigo" class="toolbar" *ngIf="searchstat">
+<input type="search" placeholder="search..." name="search" id="search" class="search">
+<button class="close-button" (click)="this.searchstat=false">x</button>
+</mat-toolbar>

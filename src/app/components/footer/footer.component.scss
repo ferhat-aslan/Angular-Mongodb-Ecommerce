@@ -1,0 +1,18 @@
+.footer-content{
+
+margin-top: 35px;
+margin-bottom: 35px;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 15px;
+  box-sizing: border-box;
+  div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

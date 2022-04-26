@@ -1,0 +1,146 @@
+{
+  "cars": [
+    {
+      "id": 1,
+      "title": "BWM i8 Sedan",
+      "fuel": "Gasoline",
+      "gearType": "automatic",
+      "gear": "8",
+      "engineCap": "2.0",
+      "year": "2022",
+      "type": "Sedan",
+      "horsePower": "335",
+      "images": ["dsfsdf", "fdsfsf"]
+    },
+    {
+      "id": 2,
+      "title": "BWM i3 Hatchback",
+      "fuel": "electric",
+      "gearType": "automatic",
+      "gear": "5",
+      "engineCap": "1.5",
+      "year": "2020",
+      "type": "Hatchback",
+      "horsePower": "235",
+      "images": ["dsfsdf", "fdsfsf"]
+    },
+    {
+      "id": 3,
+      "title": "Audi A4 Hatchback",
+      "fuel": "Gasoline",
+      "gearType": "automatic",
+      "gear": "5",
+      "engineCap": "1.5",
+      "year": "2020",
+      "type": "Hatchback",
+      "horsePower": "235",
+      "images": ["dsfsdf", "fdsfsf"]
+    }
+  ],
+  "products":[{
+    "id": 1,
+    "title": "iPhone 9",
+    "description": "An apple mobile which is nothing like apple",
+    "price": 549,
+    "discountPercentage": 12.96,
+    "rating": 4.69,
+    "stock": 94,
+    "brand": "Apple",
+    "category": "smartphones",
+    "thumbnail": "https://dummyjson.com/image/i/products/1/thumbnail.jpg",
+    "images": [
+      "https://imageio.forbes.com/specials-images/imageserve/5e974438892edc00067289d2/The-new-iPhone-SE-in-three-colors/960x0.jpg?fit=bounds&format=jpg&width=960",
+      "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_89722915/mobile_786_587_png/APPLE-iPhone-11-128GB-Ak%C4%B1ll%C4%B1-Telefon-Siyah",
+      "https://fixxtekno.com/site_media/264/owlslider/04502a5b08ccd83fbe3193b4b9bceade/iphone-x-teknik-servis.png",
+      "https://im.haberturk.com/2021/05/05/ver1620221913/3062223_f9a348f65e0ab644ed2a2370afbc3d49.png"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Samsung Galaxy 9s",
+    "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
+    "price": 1249,
+    "discountPercentage": 15.46,
+    "rating": 4.09,
+    "stock": 36,
+    "brand": "Samsung",
+    "category": "smartphones",
+    "thumbnail": "https://dummyjson.com/image/i/products/3/thumbnail.jpg",
+    "images": [
+      "https://media.flixcar.com/f360cdn/Samsung-79520139-tr-galaxy-s9plus-sm-g965-sm-g965fzpatur-backpurplepurple-94346053Download--zoom.png",
+      "https://image.samsung.com/pk/smartphones/galaxy-note9/buy/m_img_product_blue_01.png",
+      "https://cdn.shopify.com/s/files/1/2597/7694/products/note9negro_701x1000.png?v=1609380066"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "OPPOF19",
+    "description": "OPPO F19 is officially announced on April 2021.",
+    "price": 280,
+    "discountPercentage": 17.91,
+    "rating": 4.3,
+    "stock": 123,
+    "brand": "OPPO",
+    "category": "smartphones",
+    "thumbnail": "https://dummyjson.com/image/i/products/4/thumbnail.jpg",
+    "images": [
+      "https://3.bp.blogspot.com/-c91ay1Dxyp0/W32euVZeQnI/AAAAAAAAHRE/zILjJ6WkOYM3XsTcpzEre9qYA_QiP-_RQCEwYBhgL/s1600/Picture1.png",
+      "https://5.imimg.com/data5/DR/UH/NE/GLADMIN-77544578/sec2-6fc8a9fdd762df40c663dee4655571691b31df3e-500x500-500x500-500x500.png",
+      "https://www.seekpng.com/png/full/412-4125011_oppo-f9-starry-purple-ambassador-oppo-f9-starry.png",
+      "https://stickon-web-mobile-evolution.s3.ap-south-1.amazonaws.com/production/products/base_images/f9-pro-new1yc6uuEFQalizSaE.png"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "MacBook Pro",
+    "description": "MacBook Pro 2021 with mini-LED display may launch between September, November",
+    "price": 1749,
+    "discountPercentage": 11.02,
+    "rating": 4.57,
+    "stock": 83,
+    "brand": "APPle",
+    "category": "laptops",
+    "thumbnail": "https://dummyjson.com/image/i/products/6/thumbnail.png",
+    "images": [
+      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp-spacegray-select-202011_GEO_US?wid=1280&hei=1190&fmt=png-alpha&.v=1632948875000",
+      "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mbp16-spacegray-select-202110_GEO_TR?wid=1808&hei=1686&fmt=png-alpha&.v=1633657730000",
+      "https://support.apple.com/library/APPLE/APPLECARE_ALLGEOS/SP858/mbp16-gray.png",
+      "https://help.apple.com/assets/6062258EBFC7E7487E19DBB0/60622592BFC7E7487E19DBC1/tr_TR/a30dae33fdf21b2f7cd3045ae45f3dd9.png"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "perfume Oil",
+    "description": "Mega Discount, Impression of Acqua Di Gio by GiorgioArmani concentrated attar perfume Oil",
+    "price": 13,
+    "discountPercentage": 8.4,
+    "rating": 4.26,
+    "stock": 65,
+    "brand": "Impression of Acqua Di Gio",
+    "category": "fragrances",
+    "thumbnail": "https://dummyjson.com/image/i/products/11/thumbnail.jpg",
+    "images": [
+      "https://morboutique.com/wp-content/uploads/2019/08/ll21-little-luxuries-belladonna-perfume-oil-group-1000x1200.png",
+      "https://shop.ajmalperfume.com/media/catalog/product/cache/9/image/9df78eab33525d08d6e5fb8d27136e95/d/r/dream_oudh-botl_6.png",
+      "https://cdn.shopify.com/s/files/1/1992/2523/products/P1040711_500x.png?v=1593037972"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Key Holder",
+    "description": "Attractive DesignMetallic materialFour key hooksReliable & DurablePremium Quality",
+    "price": 30,
+    "discountPercentage": 2.92,
+    "rating": 4.92,
+    "stock": 54,
+    "brand": "Golden",
+    "category": "home-decoration",
+    "thumbnail": "https://dummyjson.com/image/i/products/30/thumbnail.jpg",
+    "images": [
+      "https://cdn.shopify.com/s/files/1/0252/5199/products/KS019-BLK_comparison_slider_2000x.png?v=1600807068",
+      "https://media2.bulgari.com/f_auto,q_auto/production/dw053191df/images/images/1178680.png",
+      "https://www.rollernco.com/23127-large_default/key-holder-logo-fr-skate.jpg"
+    ]
+  }
+]
+}

@@ -1,0 +1,13 @@
+<mat-sidenav-container hasBackdrop="false" class="app-sidenav-container" >
+  <mat-sidenav class="app-sidenav" mode="push" #sidenav>
+    <mat-toolbar color="indigo">EC3</mat-toolbar>
+  </mat-sidenav>
+  <div class="app-sidenav-content" fxLayout="column">
+    <app-header (toggleSidenav)="sidenav.toggle()"></app-header>
+    <div fxFlex class="outlet">
+      <router-outlet></router-outlet>
+    </div>
+
+    <app-footer fxFlexOffset="auto"></app-footer>
+  </div>
+</mat-sidenav-container>
