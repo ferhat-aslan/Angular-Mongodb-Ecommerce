@@ -6,11 +6,11 @@ import { ProductDetailComponent } from './components/product-detail/product-deta
 import { ProductsComponent } from './components/products/products.component';
 
 const routes: Routes = [
-
-  {path:'products',component:ProductsComponent},
+  {path:'',component:HomepageComponent, pathMatch:'full'},
+  {path:'products',component:ProductsComponent, pathMatch:'full'},
   {path:'product/:id',component:ProductDetailComponent},
   {path:'cart',component:CartComponent},
-  {path:'',component:HomepageComponent, pathMatch:'full'},
+
 ];
 
 @NgModule({

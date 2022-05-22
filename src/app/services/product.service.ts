@@ -9,6 +9,7 @@ export class ProductService {
 
   constructor(private http:HttpClient) { }
   getAllProducts():Observable<unknown>{
-    return this.http.get<unknown>("https://dummyjson.com/products").pipe(pluck('products'))
+    return this.http.get<unknown>("https://dummyjson.com/products").pipe(pluck("products"))
+  //http://localhost:3000/products pluck gerek yok
   }
 }

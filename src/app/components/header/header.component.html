@@ -23,7 +23,8 @@
   <button class="menu" mat-button (click)="toggleSidenav.emit()"><img src="../../../assets/icons/menu.png"
       style="color: black;" height="25px" /></button>
   <div class="pages">
-    <a [routerLink]="['/']" routerLinkActive="active" >Home Page</a>
+    <a [routerLink]="['']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+      true}">Home Page</a>
     <a [routerLink]="['products']" routerLinkActive="active">Products</a>
     <a [routerLink]="['cart']" routerLinkActive="active">Carts</a>
   </div>
