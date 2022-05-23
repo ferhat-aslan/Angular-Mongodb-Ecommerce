@@ -19,6 +19,7 @@ import { ProductDetailComponent } from './components/product-detail/product-deta
 import { CartComponent } from './components/cart/cart.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SwiperModule } from 'swiper/angular';
+import { BarRatingModule } from "ngx-bar-rating";
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { SwiperModule } from 'swiper/angular';
     MatIconModule,
     MatListModule,
     HttpClientModule,
-    SwiperModule
+    SwiperModule,
+    BarRatingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

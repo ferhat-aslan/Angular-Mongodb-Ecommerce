@@ -1,18 +1,39 @@
 <div class="wrapper">
   <div class="card" *ngFor="let item of products">
-    <swiper class="mysw"
-    [loop]="true" [autoHeight]="true" [allowTouchMove]="true"
-			 [pagination]="{ clickable: true }" [navigation]="true"
+    <swiper
+      class="mysw"
+      [loop]="true"
+      [autoHeight]="true"
+      [allowTouchMove]="true"
+      [pagination]="{ clickable: true }"
+      [navigation]="true"
     >
-      <ng-template class="swiper-slide" swiperSlide *ngFor="let imgs of item.images">
-        <div class="swiper-slide-containe"><img  class="pic" [src]="imgs" /></div>
-
+      <ng-template
+        class="swiper-slide"
+        swiperSlide
+        *ngFor="let imgs of item.images"
+      >
+        <div>
+          <img class="pic" [src]="imgs" />
+        </div>
       </ng-template>
     </swiper>
-    <h1>{{ item.title }}</h1>
+    <div class="card-body">
+    <div class="card-title"><h5>{{ item.title }}</h5></div>
+
+<div class="stock-rating"><p>Stock: {{item.stock}}</p> <bar-rating
+  [rate]="item.rating"
+  [theme]="'default'"
+  [readOnly]="true"
+  [max]="5"
+></bar-rating></div>
     <p class="price">{{ item.price }}</p>
-    <p>Some text about the jeans..</p>
+
+
+
+
 
     <p><button (click)="addToCart(item)">Add to Cart</button></p>
   </div>
+</div>
 </div>
