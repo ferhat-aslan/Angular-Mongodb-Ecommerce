@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { CartService } from 'src/app/services/cart.service';
 import { ProductService } from 'src/app/services/product.service';
+import { Cart } from '../../models/cart';
+import { Store } from '@ngrx/store';
 import SwiperCore, {
   Navigation,
   Pagination,
@@ -13,6 +15,7 @@ import SwiperCore, {
   Controller,
   SwiperOptions,
 } from 'swiper';
+import { addCart, getCart } from 'src/app/store/Actions';
 
 SwiperCore.use([
   Navigation,
@@ -33,7 +36,8 @@ SwiperCore.use([
 export class ProductsComponent implements OnInit {
   constructor(
     private cartService: CartService,
-    private productService: ProductService
+    private productService: ProductService,
+    private store:Store
   ) {}
   products: any = [];
   ngOnInit(): void {
@@ -42,11 +46,18 @@ export class ProductsComponent implements OnInit {
       console.log(this.products);
     });
   }
-  addToCart(product: any) {
-    if (!this.cartService.itemInCart(product)) {
+  addToCart(product: any):void {
+
+     // product.qtyTotal = 1;
+    this.store.dispatch(addCart({cart:product as Cart}));
+
+
+
+    /* if (!this.cartService.itemInCart(product)) {
       product.qtyTotal = 1;
-      this.cartService.addToCart(product); //add items in cart
-    }
+      this.cartService.addToCart((product as Cart)); //add items in cart
+    } */
+
   }
   config: SwiperOptions = {
     pagination: {

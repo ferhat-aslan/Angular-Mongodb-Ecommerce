@@ -9,6 +9,10 @@
 .app-sidenav {
   box-shadow: 0 0 0 0 !important;
   width: 265px;
+  mat-toolbar{
+    height: 41px;
+    border-bottom: solid 1px #e1e7ec;
+  }
 }
   .outlet{
     margin-top: 15px;

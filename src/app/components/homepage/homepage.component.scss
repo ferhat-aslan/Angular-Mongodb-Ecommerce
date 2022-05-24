@@ -1,6 +1,33 @@
-.aa{
-justify-content: end;
-display: flex;
-  float: right;
-  clip-path: polygon(0 0, 100% 100%, 100% 0);
+.top-content-wrapper{
+  display: flex ;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
+.swiper-card{
+  width: 50vw;
+  height: 50vh;
+  border-radius: 15px;
+}
+.right-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.right-cards{
+  width: 20vw;
+  height: 20vh;
+  margin: 15px;
+  background-color: blueviolet;
+  border-radius: 15px;
+}
+.pic{
+  border-radius: 15px;
+  width: 100%;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    object-position: 0;
+}
+

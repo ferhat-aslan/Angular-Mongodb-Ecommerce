@@ -1,2 +1,26 @@
-<h1>Make Yourself Feel Good</h1>
-<img class="aa" src="https://picsum.photos/536/354"/>
+<div class="top-content-wrapper">
+  <div class="left-content">
+    <div class="swiper-card"><swiper
+      class="mysw"
+      [loop]="true"
+      [autoHeight]="true"
+      [autoplay]="true"
+    >
+      <ng-template
+        class="swiper-slide"
+        swiperSlide
+        *ngFor="let imgs of images"
+      >
+        <div>
+          <img class="pic" [src]="imgs" />
+        </div>
+      </ng-template>
+    </swiper></div>
+  </div>
+  <div class="right-content">
+    <div class="right-cards"></div>
+    <div class="right-cards"></div>
+    <div class="right-cards"></div>
+    <div class="right-cards"></div>
+  </div>
+</div>

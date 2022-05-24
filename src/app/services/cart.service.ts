@@ -1,13 +1,17 @@
 import { Injectable } from '@angular/core';
+import { Store } from '@ngrx/store';
+import { map, Observable, pluck, tap } from 'rxjs';
+import { Cart } from '../models/cart';
+import { AppState } from '../store/Reducers';
 
 @Injectable({
   providedIn: 'root',
 })
 export class CartService {
-  cartList: any = [];
+  cartList: Cart[] = [];
   totalprice:number=0;
-  constructor() {}
-  addToCart(addeditem: any) {
+  constructor(private store:Store<AppState>) {}
+  addToCart(addeditem: Cart) {
     console.log(this.cartList);
 
     this.cartList.push(addeditem);
@@ -40,4 +44,8 @@ export class CartService {
   itemInCart(item: any): boolean {
     return this.cartList.findIndex((o: any) => o.id === item.id) > -1;
   }
+  /////////////////////////////////////////
+  cartitems$=this.store.select("carts").pipe(tap((action: any) => console.log(action)))
+  //cartCount$:Observable<number> =this.cartitems$.pipe(map((b)=>b.length));
+
 }

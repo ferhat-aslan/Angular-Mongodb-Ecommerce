@@ -12,6 +12,15 @@ export class HeaderComponent implements OnInit {
  cartList:any=[];
   constructor(public cartService:CartService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    console.log(this.cartService.cartitems$);
+
+    this.cartService.cartitems$.subscribe((res)=>{
+
+      this.cartList=res
+      console.log(this.cartList);
+
+    })
+  }
 
 }

@@ -35,7 +35,7 @@
     </a><a class="right-button" >
       <img src="../../../assets/icons/user.png" height="25px" />
     </a>
-    <a class="cart-button" [routerLink]="['cart']" target="_blank">
+    <a class="cart-button" [routerLink]="['cart']">
       <img src="../../../assets/icons/shopping-bag.png" height="25px" />{{cartService.cartList.length}} | {{cartService.totalprice | currency}}
     </a></div>
 </mat-toolbar>
